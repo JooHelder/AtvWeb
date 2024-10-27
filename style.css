@@ -1,95 +1,62 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    scroll-behavior: smooth;
 }
+
 header {
-    background-color: #008cba;
+    background-color: #0073e6;
     color: white;
-    padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
 }
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+
 nav {
-    background-color: #005f87;
-    padding: 15px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
 }
+
 nav ul li a {
     color: white;
-    font-size: 1.2em;
+    padding: 14px 20px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    display: inline-block;
 }
+
 nav ul li a:hover {
-    color: #ffdd57;
+    background-color: #575757;
 }
+
 section {
-    padding: 50px 20px;
-    margin: 20px auto;
+    padding: 20px;
     background-color: white;
-    max-width: 1000px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-section h2 {
-    border-bottom: 3px solid #008cba;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-    color: #333;
-}
-section p, section ul {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
-}
-.read-more-content {
-    display: none;
-    margin-top: 10px;
-    animation: fadeIn 1s ease forwards;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-.read-more-btn {
-    background-color: #008cba;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+    margin: 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.read-more-btn:hover {
-    background-color: #005f87;
+
+h2 {
+    color: #0073e6;
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-footer p {
-    margin: 0;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
